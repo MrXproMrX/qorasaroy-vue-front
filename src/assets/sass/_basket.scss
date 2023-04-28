@@ -1,0 +1,221 @@
+// basket start
+
+.basket {
+  position: relative;
+  margin-bottom: 80px;
+
+  &__menu {
+    margin-top: 30px;
+  }
+
+  &__menu__next {
+    @include fontAll(16px, 600, $red);
+    line-height: 135%;
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .products__title__list {
+    margin-top: 40px;
+  }
+
+  &__list {
+    table {
+      margin-top: 40px;
+      background-color: $fff;
+      border: 1px solid #ebebeb;
+      width: 100%;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      padding: 25px 30px;
+      tr {
+        display: grid;
+        grid-template-columns: 390px 120px 180px 180px;
+        grid-gap: 80px;
+        justify-content: start;
+        margin-bottom: 25px;
+        justify-items: start;
+        align-items: center;
+
+        th {
+          @include fontAll(16px, 600, $title);
+          line-height: 135%;
+        }
+      }
+
+      tr + tr {
+        grid-template-columns: 390px 120px 180px 180px auto;
+        margin-bottom: 0px;
+      }
+
+      tr + tr + tr {
+        margin-top: 25px;
+        padding-top: 25px;
+        border-top: 1px solid #e9e9e9;
+      }
+    }
+  }
+
+  .allProductsIn__quantity {
+    margin-top: 0;
+  }
+
+  &__img {
+    @include fiximg(100px, 100px, false);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03));
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      max-height: 100px;
+      object-position: center center;
+      aspect-ratio: 1;
+    }
+  }
+
+  &__title__h2 {
+    @include fontAll(16px, 400, $title);
+    line-height: 135%;
+  }
+
+  &__list__img {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-gap: 20px;
+    align-items: center;
+  }
+
+  &__delete {
+    @include fontAll(18px, 600, $red);
+    line-height: 100%;
+  }
+
+  &__title__h3 {
+    @include fontAll(18px, 600, $red);
+    line-height: 100%;
+  }
+
+  &__checkout {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    grid-gap: 40px;
+  }
+
+  &__checkout__title {
+    @include fontAll(16px, 400, $title);
+    line-height: 135%;
+    text-transform: uppercase;
+    span {
+      font-size: 24px;
+      font-weight: 600;
+      color: $red;
+      text-transform: none;
+      margin-left: 5px;
+    }
+  }
+}
+
+// basket end
+
+@media (max-width: 1440px) {
+  .basket__list {
+    overflow-x: scroll;
+    padding-bottom: 20px;
+    table {
+      width: 1200px;
+    }
+  }
+
+  .basket__list table tr {
+    grid-gap: 40px;
+  }
+
+  .basket__list::-webkit-scrollbar {
+    height: 5px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+
+  .basket__list::-webkit-scrollbar-track {
+    background: $fon;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+
+  .basket__list::-webkit-scrollbar-thumb {
+    background: $yellow;
+    height: 5px;
+    border-radius: 50px;
+  }
+
+  .basket__list table {
+    padding: 20px 25px;
+  }
+
+  .basket__checkout {
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .basket__title__h2,
+  .basket__checkout__title {
+    font-size: 14px;
+  }
+
+  .basket__checkout__title span {
+    font-size: 22px;
+  }
+
+  .basket__list table tr + tr {
+    grid-template-columns: 300px 120px 150px 150px auto;
+  }
+
+  .basket__list table tr {
+    grid-template-columns: 300px 120px 150px 150px;
+  }
+
+  .basket__list table {
+    width: 1000px;
+  }
+
+  .basket__list table tr {
+    margin-bottom: 15px;
+  }
+
+  .basket__list table tr + tr + tr {
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .basket__list table tr {
+    grid-gap: 20px;
+  }
+
+  .basket__list table {
+    width: 900px;
+  }
+}

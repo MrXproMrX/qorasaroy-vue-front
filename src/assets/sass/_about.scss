@@ -1,0 +1,136 @@
+// about start
+
+.about {
+  position: relative;
+  margin-bottom: 80px;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
+    margin-top: 30px;
+    li {
+      position: relative;
+    }
+
+    li:nth-last-child(1) a {
+      color: $red;
+    }
+
+    li + li {
+      padding-left: 20px;
+      &::after {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 10px;
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 9L5 5L1 1' stroke='%23D8D8D8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
+        -webkit-transform: translate(0%, -50%);
+        -moz-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+        -o-transform: translate(0%, -50%);
+      }
+    }
+  }
+
+  &__menu__link {
+    @include fontAll(16px, 600, $link);
+    line-height: 135%;
+  }
+
+  &__img {
+    padding: 30px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    .products__news__list {
+      max-width: fit-content;
+      padding: 30px 60px;
+    }
+  }
+
+  &__text {
+    @include fontAll(1rem, 400, $text);
+    line-height: 150%;
+    text-align: justify;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    em,
+    strong {
+      font-size: 110%;
+      color: $title;
+      font-weight: 700;
+      font-style: normal;
+      display: inline-block;
+    }
+
+    a {
+      font-size: 110%;
+      color: $red;
+      font-weight: 700;
+      font-style: normal;
+      display: inline-block;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 750px;
+      min-height: 200px;
+      object-fit: cover;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// about end
+
+@media (max-width: 650px) {
+  .about__menu {
+    grid-gap: 10px;
+  }
+
+  .about__menu li + li {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  .about__menu {
+    flex-wrap: wrap;
+  }
+
+  .about__menu li + li {
+    padding-left: 0px;
+  }
+
+  .about__menu li + li::after {
+    display: none;
+  }
+}

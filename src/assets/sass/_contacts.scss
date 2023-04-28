@@ -1,0 +1,199 @@
+// contacts start
+
+.contacts {
+  position: relative;
+
+  .products__title__h2 {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+    align-items: start;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__title__h3 {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2px;
+    @include fontAll(14px, 400, $red);
+    line-height: 135%;
+    text-transform: uppercase;
+
+    span {
+      color: $title;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: none;
+      display: flex;
+      grid-gap: 5px;
+      flex-direction: column;
+      a {
+        color: $title;
+        font-size: 100%;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    justify-content: end;
+    align-items: flex-end;
+  }
+
+  &__input {
+    @include fontAll(16px, 400, $title);
+    width: 100%;
+    height: 60px;
+    line-height: 135%;
+    padding: 10px 30px;
+    background-color: $fon;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    &:focus {
+      outline: 1px solid $yellow;
+    }
+
+    &::placeholder {
+      @include fontAll(16px, 400, #777474);
+    }
+  }
+
+  &__textarea {
+    @include fontAll(16px, 400, $title);
+    resize: none;
+    width: 100%;
+    height: 120px;
+    line-height: 135%;
+    padding: 10px 30px;
+    background-color: $fon;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    &:focus {
+      outline: 1px solid $yellow;
+    }
+
+    &::placeholder {
+      @include fontAll(16px, 400, #777474);
+    }
+  }
+
+  &__button {
+    width: fit-content;
+    @include fontAll(14px, 600, $fff);
+    line-height: 100%;
+    background-color: $red;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 18px 34px;
+    text-transform: uppercase;
+    @extend%transition;
+    margin-top: 10px;
+
+    &:hover {
+      background-color: #dd3218da;
+    }
+  }
+
+  &__title__h4 {
+    @include fontAll(14px, 600, $title);
+    line-height: 100%;
+    text-transform: uppercase;
+    width: fit-content;
+    background-color: $yellow;
+    padding: 18px 30px;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+  }
+
+  &__maps {
+    width: 100%;
+    height: 500px;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// contacts end
+
+@media (max-width: 1300px) {
+  .contacts__list {
+    grid-gap: 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contacts__list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+
+  .contacts__maps {
+    height: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contacts__input {
+    height: 50px;
+    padding: 5px 20px;
+    font-size: 14px;
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+
+  .contacts__textarea {
+    height: 100px;
+    padding: 5px 20px;
+    font-size: 14px;
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .contacts__maps {
+    height: 300px;
+  }
+
+  .contacts__list {
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contacts__maps {
+    height: 250px;
+  }
+}
