@@ -138,10 +138,6 @@ input[type='date' i] {
     position: relative;
     width: 50px;
     height: 45px;
-    .dropdown-content {
-      display: none;
-      outline: none;
-    }
   }
 
   &__ru_none {
@@ -161,7 +157,7 @@ input[type='date' i] {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     overflow: hidden;
-    display: none;
+
     .header__en__link {
       text-transform: capitalize;
       display: inline-block;
@@ -379,17 +375,6 @@ input[type='date' i] {
 
 .header__menu li:hover > a {
   color: $red;
-}
-
-.languageActive {
-  display: block;
-  width: 50px;
-  left: 0px;
-  top: -50px;
-  height: 48px;
-  transform-origin: 0px 0px;
-  opacity: 1;
-  transform: scaleX(1) scaleY(1);
 }
 
 .modal-overlay {
@@ -723,6 +708,7 @@ input[type='date' i] {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 80px;
   }
 
   &__news__img {
@@ -930,6 +916,10 @@ input[type='date' i] {
       background-color: #dd3218da;
     }
   }
+
+  &__all__products {
+    margin-bottom: 80px;
+  }
 }
 
 // varnishes end
@@ -1097,7 +1087,9 @@ input[type='date' i] {
   .whereToBuy,
   .blog,
   .blogIn,
-  .cabinet {
+  .cabinet,
+  .products__news,
+  .varnishes__all__products {
     margin-bottom: 40px;
   }
 
@@ -1556,7 +1548,9 @@ input[type='date' i] {
   .blogIn,
   .cabinet__cart,
   .cabinet__myOrders__menu,
-  .registration__title__h2 {
+  .registration__title__h2,
+  .products__news,
+  .varnishes__all__products {
     margin-bottom: 30px;
   }
 

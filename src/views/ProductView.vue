@@ -86,7 +86,7 @@
           <RouterLink class="products__all__link" to="/catalog">Смотреть все</RouterLink>
         </div>
         <section class="varnishes__list">
-          <VarnishesItem :varnishes="varnishes" />
+          <SimilarProducts :varnishes="varnishes" />
         </section>
       </div>
     </section>
@@ -94,7 +94,7 @@
 </template>
 
 <script>
-import VarnishesItem from '@/components/home/TheVarnishes.vue'
+import SimilarProducts from '@/components/home/TheSimilarProducts.vue'
 import varnishes from '@/data/varnishes'
 import allProducts from '@/data/allProducts'
 export default {
@@ -106,7 +106,7 @@ export default {
   },
 
   components: {
-    VarnishesItem,
+    SimilarProducts,
   },
 
   computed: {

@@ -6,12 +6,8 @@ import 'swiper/css/effect-fade'
 
 import productsItem from '@/components/home/TheProducts.vue'
 import products from '@/data/products'
-import VarnishesItem from '@/components/home/TheVarnishes.vue'
-import varnishes from '@/data/varnishes'
-import WaterBasedItem from '@/components/home/TheWaterBased.vue'
-import waterBased from '@/data/waterBased'
-import ConstructionItem from '@/components/home/TheConstruction.vue'
-import construction from '@/data/construction'
+import TheProductsList from '@/components/home/TheProductsList.vue'
+import varnishes from '@/data/allProductsList'
 </script>
 
 <template>
@@ -71,105 +67,25 @@ import construction from '@/data/construction'
         <div class="products__list">
           <productsItem :products="products" />
         </div>
-
-        <div class="products__news">
-          <div class="products__news__img">
-            <img src="@/assets/img/productsFon.png" alt="productsFon" />
-          </div>
-
-          <div class="products__news__list">
-            <h2 class="products__news__title">Водоэмульсионные краски</h2>
-            <div class="products__news__text">
-              <p>В наличии</p>
-            </div>
-            <RouterLink to="#!" class="products__news__link">Каталог</RouterLink>
-          </div>
-        </div>
       </div>
     </section>
   </div>
 
   <!-- Product Categories end -->
 
-  <!-- paints and varnishes start -->
+  <!-- Products start -->
 
-  <div class="varnishes">
+  <div class="varnishes__all__products">
+    <TheProductsList :varnishes="varnishes"></TheProductsList>
     <section class="container">
-      <div class="varnishes__car">
-        <div class="products__title__list">
-          <h2 class="products__title__h2">Лакокрасочные материалы</h2>
-          <RouterLink class="products__all__link" to="#!">Смотреть все</RouterLink>
-        </div>
-        <div class="varnishes__list"><VarnishesItem :varnishes="varnishes" /></div>
-
-        <div class="products__news">
-          <div class="products__news__img">
-            <img src="@/assets/img/varnishesFon.png" alt="productsFon" />
-          </div>
-
-          <div class="products__news__list">
-            <h2 class="products__news__title">Электротехнические товары</h2>
-            <div class="products__news__text">
-              <p>В наличии</p>
-            </div>
-            <RouterLink to="#!" class="products__news__link">Каталог</RouterLink>
-          </div>
-        </div>
+      <div class="varnishes__all">
+        <RouterLink to="#!" class="varnishes__all__link">
+          Показать еще
+          <span><font-awesome-icon icon="fas fa-chevron-down" /></span>
+        </RouterLink>
       </div>
     </section>
   </div>
 
-  <!-- paints and varnishes end -->
-
-  <!-- Water-based paints -->
-
-  <div class="varnishes">
-    <section class="container">
-      <div class="varnishes__car">
-        <div class="products__title__list">
-          <h2 class="products__title__h2">Водоэмульсионные краски</h2>
-          <RouterLink class="products__all__link" to="#!">Смотреть все</RouterLink>
-        </div>
-        <div class="varnishes__list"><WaterBasedItem :waterBased="waterBased" /></div>
-
-        <div class="products__news">
-          <div class="products__news__img">
-            <img src="@/assets/img/waterBasedFon.png" alt="productsFon" />
-          </div>
-
-          <div class="products__news__list">
-            <h2 class="products__news__title">Арматура высокого качества</h2>
-            <div class="products__news__text">
-              <p>В наличии</p>
-            </div>
-            <RouterLink to="#!" class="products__news__link">Каталог</RouterLink>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- Water-based paints -->
-
-  <!-- Construction Materials paints -->
-
-  <div class="varnishes">
-    <section class="container">
-      <div class="varnishes__car">
-        <div class="products__title__list">
-          <h2 class="products__title__h2">Водоэмульсионные краски</h2>
-          <RouterLink class="products__all__link" to="#!">Смотреть все</RouterLink>
-        </div>
-        <div class="varnishes__list"><ConstructionItem :construction="construction" /></div>
-        <div class="varnishes__all">
-          <RouterLink to="#!" class="varnishes__all__link">
-            Показать еще
-            <span><font-awesome-icon icon="fas fa-chevron-down" /></span>
-          </RouterLink>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- Construction Materials paints -->
+  <!-- Products start -->
 </template>

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import TheCatalogItem from '@/components/catalog/TheCatalogItem.vue'
 import allProducts from '@/data/allProducts'
-import ThePagination from '@/components/ThePagination.vue'
 import TheProductCatalog from '@/components/catalog/TheProductCatalog.vue'
 import categories from '@/data/allProductsCategories'
 import ThePrice from '@/components/catalog/ThePrice.vue'
@@ -30,7 +29,6 @@ import ThePrice from '@/components/catalog/ThePrice.vue'
             <h2 class="products__title__h2">Вся продукция</h2>
 
             <TheCatalogItem :all-products="allProducts" />
-            <ThePagination />
           </div>
         </div>
       </div>

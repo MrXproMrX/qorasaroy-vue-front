@@ -22,22 +22,26 @@
             <div class="header__list__icons">
               <!-- language start -->
 
-              <div class="header__ru">
-                <button class="header__ru_cart" @click="languageDropdown">
-                  <img src="@/assets/img/icons/globe.svg" alt="globe" />
-                  <span><font-awesome-icon icon="fas fa-chevron-down" /></span>
-                </button>
+              <v-menu>
+                <template v-slot:activator="{ props }">
+                  <div class="header__ru">
+                    <button class="header__ru_cart" v-bind="props">
+                      <img src="@/assets/img/icons/globe.svg" alt="globe" />
+                      <span><font-awesome-icon icon="fas fa-chevron-down" /></span>
+                    </button>
+                  </div>
+                </template>
 
-                <div class="header__ru_none" :class="{ languageActive: language }">
+                <div class="header__ru_none">
                   <div class="header__ru_list active">
-                    <a href="#!-1" class="header__en__link" @click="languageDropdown">Ru</a>
+                    <a href="#!-1" class="header__en__link">Ru</a>
                   </div>
 
                   <div class="header__ru_list">
-                    <a href="#!-2" class="header__en__link" @click="languageDropdown">O’z</a>
+                    <a href="#!-2" class="header__en__link">O’z</a>
                   </div>
                 </div>
-              </div>
+              </v-menu>
 
               <!-- language start -->
               <button class="header__search" @click="searchActive">
@@ -225,7 +229,6 @@ export default defineComponent({
     return {
       burger: false,
       search: false,
-      language: false,
       entrance: false,
       forgotYourPassword: false,
       smScode: false,
@@ -242,9 +245,6 @@ export default defineComponent({
     },
     searchActive() {
       this.search = !this.search
-    },
-    languageDropdown() {
-      this.language = !this.language
     },
     entranceActive() {
       this.entrance = !this.entrance
