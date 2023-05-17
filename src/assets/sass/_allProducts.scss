@@ -4,6 +4,10 @@
   position: relative;
   margin-bottom: 80px;
 
+  .slider-tooltip {
+    display: none;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: 280px auto;
