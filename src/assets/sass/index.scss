@@ -56,7 +56,7 @@ input[type='date' i] {
 
   &__list__item {
     display: grid;
-    grid-template-columns: 170px auto;
+    grid-template-columns: 115px auto;
     grid-gap: 50px;
     align-items: center;
   }
@@ -69,10 +69,10 @@ input[type='date' i] {
   }
 
   &__logo {
-    @include fiximg(100%, 70px, false);
+    @include fiximg(100%, 88px, false);
     img {
       object-position: center center;
-      max-height: 70px;
+      max-height: 90px;
     }
   }
 
@@ -437,7 +437,7 @@ input[type='date' i] {
 
   &__item__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     grid-gap: 20px;
     align-items: center;
   }
@@ -454,6 +454,17 @@ input[type='date' i] {
     text-align: center;
     justify-content: center;
     padding: 0px 50px;
+  }
+
+  &__title {
+    @include fontAll(16px, 400, $title);
+    line-height: 135%;
+  }
+
+  &__form__item {
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-gap: 20px;
   }
 
   &__input {
@@ -916,10 +927,6 @@ input[type='date' i] {
       background-color: #dd3218da;
     }
   }
-
-  &__all__products {
-    margin-bottom: 80px;
-  }
 }
 
 // varnishes end
@@ -1088,8 +1095,7 @@ input[type='date' i] {
   .blog,
   .blogIn,
   .cabinet,
-  .products__news,
-  .varnishes__all__products {
+  .products__news {
     margin-bottom: 40px;
   }
 
@@ -1113,15 +1119,14 @@ input[type='date' i] {
   .allProductsIn .products__title__list,
   .basket__list table,
   .basket__checkout,
-  .checkout__list,
-  .checkout__form,
   .whereToBuy__list,
   .whereToBuy .products__title__h2,
   .blog .products__title__h2,
   .blog__list,
   .blogIn .products__title__h2,
   .blogIn__list,
-  .contacts__list {
+  .contacts__list,
+  .checkout__title__list {
     margin-top: 30px;
   }
 
@@ -1461,7 +1466,8 @@ input[type='date' i] {
   .allProductsIn__addToCart,
   .contacts__button,
   .contacts__title__h4,
-  .registration__button {
+  .registration__button,
+  .cabinet__address__add {
     padding: 14px 24px;
   }
 
@@ -1549,8 +1555,7 @@ input[type='date' i] {
   .cabinet__cart,
   .cabinet__myOrders__menu,
   .registration__title__h2,
-  .products__news,
-  .varnishes__all__products {
+  .products__news {
     margin-bottom: 30px;
   }
 
@@ -1576,7 +1581,6 @@ input[type='date' i] {
   .allProductsIn .products__title__list,
   .basket__list table,
   .basket__checkout,
-  .checkout__list,
   .whereToBuy__list,
   .whereToBuy .products__title__h2,
   .blog .products__title__h2,
@@ -1585,7 +1589,8 @@ input[type='date' i] {
   .blogIn__list,
   .contacts__list,
   .cabinet__myOrders__menu,
-  .cabinet__form {
+  .cabinet__form,
+  .checkout__title__list {
     margin-top: 20px;
   }
 
@@ -1648,6 +1653,7 @@ input[type='date' i] {
   .header__list__item {
     display: flex;
     flex-direction: column;
+    max-width: 115px;
   }
 
   .footer__cart__list {
@@ -1661,7 +1667,7 @@ input[type='date' i] {
 
   .header__logo img {
     object-position: center left;
-    max-height: 70px;
+    max-height: 90px;
   }
 
   .header__menu {

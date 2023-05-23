@@ -40,12 +40,6 @@ const router = createRouter({
     },
 
     {
-      path: '/payment',
-      name: 'payment',
-      component: () => import('@/views/PaymentView.vue'),
-    },
-
-    {
       path: '/buy',
       name: 'buy',
       component: () => import('@/views/WhereToBuyView.vue'),
@@ -72,7 +66,7 @@ const router = createRouter({
     {
       path: '/cabinet',
       name: 'cabinet',
-      component: () => import('@/views/PersonalAreaView.vue'),
+      component: () => import('@/views/CabinetView.vue'),
     },
   ],
 })

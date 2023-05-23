@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <div class="products__item" v-for="item in products" :key="item.id">
-    <RouterLink to="#!">
+    <RouterLink :to="item.link">
       <div class="products__img">
         <img :src="item.img" :alt="item.title" />
       </div>

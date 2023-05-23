@@ -3,11 +3,8 @@ import { RouterLink } from 'vue-router'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, EffectFade } from 'swiper'
 import 'swiper/css/effect-fade'
-
 import productsItem from '@/components/home/TheProducts.vue'
 import products from '@/data/products'
-import TheProductsList from '@/components/home/TheProductsList.vue'
-import varnishes from '@/data/allProductsList'
 </script>
 
 <template>
@@ -61,7 +58,7 @@ import varnishes from '@/data/allProductsList'
       <div class="products__cart">
         <div class="products__title__list">
           <h2 class="products__title__h2">Категории продукции</h2>
-          <RouterLink class="products__all__link" to="#!">Все категории</RouterLink>
+          <RouterLink class="products__all__link" to="/catalog">Все категории</RouterLink>
         </div>
 
         <div class="products__list">
@@ -72,20 +69,4 @@ import varnishes from '@/data/allProductsList'
   </div>
 
   <!-- Product Categories end -->
-
-  <!-- Products start -->
-
-  <div class="varnishes__all__products">
-    <TheProductsList :varnishes="varnishes"></TheProductsList>
-    <section class="container">
-      <div class="varnishes__all">
-        <RouterLink to="#!" class="varnishes__all__link">
-          Показать еще
-          <span><font-awesome-icon icon="fas fa-chevron-down" /></span>
-        </RouterLink>
-      </div>
-    </section>
-  </div>
-
-  <!-- Products start -->
 </template>
