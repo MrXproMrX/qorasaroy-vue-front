@@ -61,10 +61,42 @@
     }
   }
 
+  &__add__address {
+    width: fit-content;
+    @include fontAll(16px, 600, $fff);
+    line-height: 100%;
+    padding: 22px 60px;
+    background-color: $red;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-transform: uppercase;
+    @extend%transition;
+    &:hover {
+      background-color: #dd3218d1;
+    }
+  }
+
+  &__total_sums {
+    @include fontAll(16px, 400, $title);
+    line-height: 135%;
+    text-align: right;
+    span {
+      font-size: 20px;
+      color: $red;
+      font-weight: 700;
+      margin-left: 5px;
+    }
+  }
+
   &__button__item {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    grid-gap: 50px;
+    flex-wrap: wrap;
   }
 
   &__item__address {
@@ -91,22 +123,6 @@
   &__title__address {
     @include fontAll(16px, 400, $title);
     line-height: 135%;
-  }
-
-  &__title__h4 {
-    @include fontAll(18px, 600, $red);
-    line-height: 135%;
-    margin-bottom: 20px;
-    span {
-      @include fontAll(18px, 600, $fff);
-      padding: 2px 8px;
-      background-color: $red;
-      border-radius: 10px;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      -ms-border-radius: 10px;
-      -o-border-radius: 10px;
-    }
   }
 
   &__delivery__date {
@@ -368,10 +384,6 @@
 
   .checkout__payment {
     padding-bottom: 15px;
-  }
-
-  .checkout__title__h4 {
-    margin-bottom: 10px;
   }
 }
 

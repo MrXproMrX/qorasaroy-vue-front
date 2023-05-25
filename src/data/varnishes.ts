@@ -14,7 +14,7 @@ export default [
     id: 1,
     price: '60000',
     categories: 'varnishes',
-    productsAmount: 1,
+    productsAmount: 0,
   },
 
   {
@@ -23,7 +23,7 @@ export default [
     id: 2,
     price: '30000',
     categories: 'varnishes',
-    productsAmount: 1,
+    productsAmount: 0,
   },
 
   {
@@ -32,7 +32,7 @@ export default [
     id: 3,
     price: '100000',
     categories: 'varnishes',
-    productsAmount: 1,
+    productsAmount: 0,
   },
 
   {
@@ -41,7 +41,7 @@ export default [
     id: 4,
     price: '90000',
     categories: 'varnishes',
-    productsAmount: 1,
+    productsAmount: 0,
   },
 
   {
@@ -50,7 +50,7 @@ export default [
     id: 5,
     price: '40000',
     categories: 'varnishes',
-    productsAmount: 1,
+    productsAmount: 0,
   },
 
   {
@@ -59,7 +59,7 @@ export default [
     id: 6,
     price: '200000',
     categories: 'varnishes',
-    productsAmount: 1,
+    productsAmount: 0,
   },
 
   {
@@ -68,7 +68,7 @@ export default [
     id: 7,
     price: '130000',
     categories: 'varnishes',
-    productsAmount: 1,
+    productsAmount: 0,
   },
 
   {
@@ -77,6 +77,6 @@ export default [
     id: 8,
     price: '120000',
     categories: 'varnishes',
-    productsAmount: 1,
+    productsAmount: 0,
   },
 ]

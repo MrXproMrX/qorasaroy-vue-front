@@ -43,9 +43,13 @@
               </div>
             </section>
 
-            <input type="text" class="checkout__input" placeholder="Введите адрес" />
-
-            <h4 class="checkout__title__h4">Сумма доставки до 20кг: <span>?</span> 0 сум</h4>
+            <button
+              type="button"
+              @click="addAddressActive = !addAddressActive"
+              class="checkout__add__address"
+            >
+              Добавить адрес
+            </button>
 
             <h3 class="checkout__title__h3">Время доставки</h3>
 
@@ -172,6 +176,11 @@
             </template>
 
             <section class="checkout__button__item">
+              <div class="checkout__cart__item">
+                <h3 class="checkout__total_sums">
+                  Общая сумма:<span>360 000 сум</span> <br />Без учета доставки
+                </h3>
+              </div>
               <button type="submit" class="checkout__button">Оформить</button>
             </section>
           </form>
@@ -179,15 +188,30 @@
       </div>
     </section>
   </div>
+  <template v-if="addAddressActive">
+    <TheAddAddress @addAddress="addAddress"></TheAddAddress>
+  </template>
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue'
+import TheAddAddress from '@/components/checkout/TheAddAddress.vue'
+export default defineComponent({
   data() {
     return {
       delivery: 'today',
       value: '',
+      addAddressActive: TheAddAddress.active,
     }
   },
-}
+
+  components: {
+    TheAddAddress,
+  },
+
+  addAddress(addActive) {
+    this.addAddressActive = addActive
+    console.log((this.addAddressActive = addActive), '0000')
+  },
+})
 </script>

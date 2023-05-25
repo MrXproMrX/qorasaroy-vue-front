@@ -220,23 +220,29 @@
     }
   }
 
+  &__quantity__button {
+    @include fontAll(14px, 600, $fff);
+    width: 30px;
+    height: 30px;
+    background-color: $red;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  &__quantity__delete {
+    @include fontAll(16px, 600, $red);
+    width: 30px;
+    height: 30px;
+  }
+
   &__quantity {
     display: flex;
     align-items: center;
     grid-gap: 10px;
     margin-top: 30px;
-
-    button {
-      @include fontAll(14px, 600, $fff);
-      width: 30px;
-      height: 30px;
-      background-color: $red;
-      border-radius: 10px;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      -ms-border-radius: 10px;
-      -o-border-radius: 10px;
-    }
 
     input {
       @include fontAll(16px, 600, $title);

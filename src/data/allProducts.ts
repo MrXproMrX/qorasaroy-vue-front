@@ -30,6 +30,7 @@ export default [
     id: 1,
     price: '60000',
     categories: 'varnishes',
+    productsAmount: 0,
   },
 
   {
@@ -38,6 +39,7 @@ export default [
     id: 2,
     price: '30000',
     categories: 'varnishes',
+    productsAmount: 0,
   },
 
   {
@@ -46,6 +48,7 @@ export default [
     id: 3,
     price: '100000',
     categories: 'varnishes',
+    productsAmount: 0,
   },
 
   {
@@ -54,6 +57,7 @@ export default [
     id: 4,
     price: '90000',
     categories: 'varnishes',
+    productsAmount: 0,
   },
 
   {
@@ -62,6 +66,7 @@ export default [
     id: 5,
     price: '40000',
     categories: 'varnishes',
+    productsAmount: 0,
   },
 
   {
@@ -70,6 +75,7 @@ export default [
     id: 6,
     price: '200000',
     categories: 'varnishes',
+    productsAmount: 0,
   },
 
   {
@@ -78,6 +84,7 @@ export default [
     id: 7,
     price: '130000',
     categories: 'varnishes',
+    productsAmount: 0,
   },
 
   {
@@ -86,6 +93,7 @@ export default [
     id: 8,
     price: '120000',
     categories: 'varnishes',
+    productsAmount: 0,
   },
 
   {
@@ -94,6 +102,7 @@ export default [
     id: 9,
     price: '60000',
     categories: 'waterBased',
+    productsAmount: 0,
   },
 
   {
@@ -102,6 +111,7 @@ export default [
     id: 10,
     price: '30000',
     categories: 'waterBased',
+    productsAmount: 0,
   },
 
   {
@@ -110,6 +120,7 @@ export default [
     id: 11,
     price: '100000',
     categories: 'waterBased',
+    productsAmount: 0,
   },
 
   {
@@ -118,6 +129,7 @@ export default [
     id: 12,
     price: '90000',
     categories: 'waterBased',
+    productsAmount: 0,
   },
 
   {
@@ -126,6 +138,7 @@ export default [
     id: 13,
     price: '40000',
     categories: 'waterBased',
+    productsAmount: 0,
   },
 
   {
@@ -134,6 +147,7 @@ export default [
     id: 14,
     price: '200000',
     categories: 'waterBased',
+    productsAmount: 0,
   },
 
   {
@@ -142,6 +156,7 @@ export default [
     id: 15,
     price: '130000',
     categories: 'waterBased',
+    productsAmount: 0,
   },
 
   {
@@ -150,6 +165,7 @@ export default [
     id: 16,
     price: '120000',
     categories: 'waterBased',
+    productsAmount: 0,
   },
 
   {
@@ -158,6 +174,7 @@ export default [
     id: 17,
     price: '60000',
     categories: 'construction',
+    productsAmount: 0,
   },
 
   {
@@ -166,6 +183,7 @@ export default [
     id: 18,
     price: '30000',
     categories: 'construction',
+    productsAmount: 0,
   },
 
   {
@@ -174,6 +192,7 @@ export default [
     id: 19,
     price: '100000',
     categories: 'construction',
+    productsAmount: 0,
   },
 
   {
@@ -182,6 +201,7 @@ export default [
     id: 20,
     price: '90000',
     categories: 'construction',
+    productsAmount: 0,
   },
 
   {
@@ -190,6 +210,7 @@ export default [
     id: 21,
     price: '40000',
     categories: 'construction',
+    productsAmount: 0,
   },
 
   {
@@ -198,6 +219,7 @@ export default [
     id: 22,
     price: '200000',
     categories: 'construction',
+    productsAmount: 0,
   },
 
   {
@@ -206,6 +228,7 @@ export default [
     id: 23,
     price: '130000',
     categories: 'construction',
+    productsAmount: 0,
   },
 
   {
@@ -214,5 +237,6 @@ export default [
     id: 24,
     price: '120000',
     categories: 'construction',
+    productsAmount: 0,
   },
 ]

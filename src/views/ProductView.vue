@@ -100,7 +100,7 @@ import allProducts from '@/data/allProducts'
 export default {
   data() {
     return {
-      productsAmount: 1,
+      productsAmount: 0,
       varnishes: varnishes,
     }
   },
@@ -123,7 +123,7 @@ export default {
     minus() {
       this.productsAmount--
       if (this.productsAmount < 1) {
-        this.productsAmount = 1
+        this.productsAmount = 0
       }
     },
   },

@@ -40,7 +40,7 @@
             </section>
 
             <section class="cabinet__addAddress__cart">
-              <h4 class="cabinet__title__h4">Ориентир</h4>
+              <h4 class="cabinet__title__h4">Улица</h4>
               <input
                 class="cabinet__input"
                 type="text"
@@ -69,6 +69,7 @@
           </div>
         </sec>
         <button class="contacts__button" type="submit">Сохранить</button>
+        <a href="#!" class="cabinet__delete_profile">Удалить профиль</a>
       </form>
     </div>
   </section>

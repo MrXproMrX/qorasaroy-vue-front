@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import TheCatalogItem from '@/components/catalog/TheCatalogItem.vue'
-import allProducts from '@/data/allProducts'
 import TheProductCatalog from '@/components/catalog/TheProductCatalog.vue'
 import categories from '@/data/allProductsCategories'
 import ThePrice from '@/components/catalog/ThePrice.vue'
@@ -28,7 +27,7 @@ import ThePrice from '@/components/catalog/ThePrice.vue'
           <div class="allProducts__item__cart">
             <h2 class="products__title__h2">Вся продукция</h2>
 
-            <TheCatalogItem :all-products="allProducts" />
+            <TheCatalogItem />
           </div>
         </div>
       </div>

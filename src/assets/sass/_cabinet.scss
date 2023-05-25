@@ -367,6 +367,11 @@
   &__addAddress {
     margin-top: 30px;
   }
+
+  &__delete_profile {
+    @include fontAll(16px, 600, $red);
+    line-height: 135%;
+  }
 }
 
 .cabinet__myOrders__menu li:hover > button::after {
