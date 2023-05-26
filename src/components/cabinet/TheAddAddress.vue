@@ -69,7 +69,6 @@
           </div>
         </sec>
         <button class="contacts__button" type="submit">Сохранить</button>
-        <a href="#!" class="cabinet__delete_profile">Удалить профиль</a>
       </form>
     </div>
   </section>
